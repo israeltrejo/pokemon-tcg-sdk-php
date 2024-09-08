@@ -564,7 +564,7 @@ class Card extends Model
     /**
      * @return string
      */
-    public function getRegulationMark(): string
+    public function getRegulationMark(): ?string
     {
         return $this->regulationMark;
     }
@@ -572,7 +572,7 @@ class Card extends Model
     /**
      * @param string $id
      */
-    public function setRegulationMark(string $regulationMark)
+    public function setRegulationMark(?string $regulationMark)
     {
         $this->regulationMark = $regulationMark;
     }
