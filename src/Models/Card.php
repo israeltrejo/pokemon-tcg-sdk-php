@@ -141,6 +141,11 @@ class Card extends Model
     private $cardmarket;
 
     /**
+     * @var string|null
+     */
+    private $regulationMark;
+
+    /**
      * @return string
      */
     public function getId(): string
@@ -554,6 +559,22 @@ class Card extends Model
     public function setCardmarket(?CardMarket $cardMarket): void
     {
         $this->cardmarket = $cardMarket;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRegulationMark(): string
+    {
+        return $this->regulationMark;
+    }
+
+    /**
+     * @param string $id
+     */
+    public function setRegulationMark(string $regulationMark)
+    {
+        $this->regulationMark = $regulationMark;
     }
 
 }
